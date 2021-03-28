@@ -5,22 +5,32 @@
   <title></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
   <header>
     <h1> The Seven Wonders of the Ancient World</h1>
   </header>
 
-  <body>
-    <img src="images/maerten_van_heemskerck_-_panorama_with_the_abduction_of_helen_amidst_the_wonders_of_the_ancient_world_-_walters_37656.jpg" alt="">
-    <h2>Remarkable constructions of classical antiquity—lost in time</h2>
-    <p>Come explore the ancient wonders with our amazing teleportation technology that jumps you around the world.</p>
-    <img src="images/Temple_of_Artemis.jpg" alt="">
-    <img src="images/Colossus_of_Rhodes.jpg" alt="">
-    <img src="images/Hanging_Gardens_of_Babylon.jpg" alt="">
-  </body>
+  <main>
+    <div class="container">
+      <img src="images/maerten_van_heemskerck_-_panorama_with_the_abduction_of_helen_amidst_the_wonders_of_the_ancient_world_-_walters_37656.jpg" alt="">
+      <div class="img-text"><h2>Remarkable constructions of classical antiquity—lost in time</h2>
+      <p>Come explore the ancient wonders with our amazing teleportation technology that jumps you around the world.</p></div>
+    </div>
+    <ul>
+      <li><img src="images/Temple_of_Artemis.jpg" alt=""></li>
+      <li><img src="images/Colossus_of_Rhodes.jpg" alt=""></li>
+      <li><img src="images/Hanging_Gardens_of_Babylon.jpg" alt=""></li>
+    </ul>
+
+  </main>
 
   <footer>
+    <div class="temple">
     <h2>Temple of Artemis</h2>
     <dl>
       <dt>Construction:</dt>
@@ -30,6 +40,9 @@
       <dt>Location:</dt>
       <dd>Selçuk, Turkey</dd>
     </dl>
+    </div>
+
+<div class="colossus">
     <h2>Colossus of Rhodes</h2>
     <dl>
       <dt>Construction:</dt>
@@ -39,6 +52,9 @@
       <dt>Location:</dt>
       <dd>Rhodes, Greece</dd>
     </dl>
+    </div>
+
+<div class="gardens">
     <h2>Gardens of Babylon</h2>
     <dl>
       <dt>Construction:</dt>
@@ -48,6 +64,8 @@
       <dt>Location:</dt>
       <dd>Nineveh, Iraq</dd>
     </dl>
+</div>
   </footer>
+
 </body>
 </html>

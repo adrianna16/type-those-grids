@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* font-family: 'Merriweather', serif; */
+
+body {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .75rem;
+}
+
+main img:first-child {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.container {
+  text-align: left;
+  color: #fff;
+}
+
+.img-text {
+  margin-top: -10rem;
+  padding-left: 1.5rem;
+}
+
+div h2 {
+  margin-bottom: -1.5rem;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+footer {
+  margin-top: -1rem;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  ".temple .colossus .gardens"
+}
