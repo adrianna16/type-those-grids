@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
+    max-width: 65rem;
 }
 
 *, *::before, *::after {
@@ -11,12 +12,51 @@ html {
 /* font-family: "Merriweather", serif; */
 
 body {
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
   font-family: Merriweather, serif;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1rem;
   font-style: italic;
+}
+
+li img {
+  width: 100%;
+}
+
+figure img {
+  max-width: 70%;
+  height: auto;
+}
+
+figure {
+  background-color: #fff;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+  text-align: left;
+  background-image: url(../images/maerten-van-heemskerck.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+h1 {
+  font-size: 1.8rem;
+  margin: 1rem;
+  padding: .5rem 0;
+  font-weight: lighter;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: -1rem;
+}
+
+main p {
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 ul {
@@ -27,22 +67,10 @@ ul {
   gap: .75rem;
 }
 
-main img:first-child {
-  width: 100%;
-  padding-bottom: 1rem;
-}
-
-.container {
-  text-align: left;
-  color: #fff;
-}
-
-.img-text {
-  margin-top: -10rem;
-  padding-left: 1.5rem;
-}
-
 div h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: -1.5rem;
   margin-bottom: -1.5rem;
 }
 
@@ -53,24 +81,15 @@ p {
 }
 
 footer {
-  margin-top: -1rem;
-  padding: 0;
+  padding: 1rem;
+  margin: 1rem;
   align-self: auto;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "box1 box2 box3";
+  ".temple .colossus .gardens";
 }
 
-footer h2:nth-child(1) {
-  grid-area: box1;
-}
-
-footer h2:nth-child(2) {
-  grid-area: box2;
-}
-
-footer h2:nth-child(3) {
-  grid-area: box3;
+footer h2 {
+  padding-bottom: 1rem;
 }
