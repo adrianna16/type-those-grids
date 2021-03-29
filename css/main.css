@@ -57,5 +57,37 @@ header {
 }
 
 p {
-  padding: 1.5rem 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.banner-text h2 {
+  margin-bottom: 0;
+}
+
+.banner-text p {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+figure h2 {
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-style: italic;
+}
+
+dd {
+  margin-left: 1rem;
 }
