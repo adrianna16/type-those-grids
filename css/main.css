@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
-    max-width: 65rem;
 }
 
 *, *::before, *::after {
@@ -11,85 +10,29 @@ html {
 
 /* font-family: "Merriweather", serif; */
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Merriweather, serif;
-  font-size: 1rem;
-  font-style: italic;
-}
-
 img {
   width: 100%;
 }
 
-figure img {
-  max-width: 70%;
-  height: auto;
-}
-
-figure {
-  background-color: #fff;
-  color: #fff;
+body {
   margin: 0;
-  padding: 0 0 1rem 1rem;
-  text-align: left;
-  background-image: url(../images/maerten-van-heemskerck.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
-
-
-h1 {
-  font-size: 1.8rem;
-  margin: 1rem;
-  padding: .5rem 0;
-  font-weight: lighter;
-}
-
-main h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: -1rem;
-}
-
-main p {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .75rem;
-}
-
-div h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-top: -1.5rem;
-  margin-bottom: -1.5rem;
-}
-
-p {
-  font-family: Merriweather, serif;
-  font-size: 1.5rem;
-  font-style: normal;
-}
-
-footer {
-  padding: 1rem;
-  margin: 1rem;
-  align-self: auto;
+main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  ".temple .colossus .gardens";
+  "banner banner banner"
+  "box1 box2 box3";
+  gap: .75em;
 }
 
-footer h2 {
-  padding-bottom: 1rem;
+.banner {
+  grid-area: banner;
+}
+
+.banner-text {
+  grid-area: banner;
+  align-self: end;
+  color: #fff;
 }
